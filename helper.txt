@@ -1,0 +1,96 @@
+Project-117 Tasks{
+   You have to add the below code in the index.html file.
+   
+1. Add the below code after the h1 tag which is holding the text ‘Quick Draw’:
+
+- Create a p tag and set the text as “Your Sketch” and also give an id
+which will be used to update this p tag with the guessed sketched
+name that you will be drawing on the canvas (functionality for this will
+be added in the next project).   Done
+
+- Similarly, create one more p tag and set text as “Confidence” and also
+give an id which will be used to update this p tag with the confidence
+of the sketch drawn.     Done
+
+- Again, create one more p tag and give text 'Sketch to be drawn' and
+id, which will be used to update the name of the sketch that you have
+to draw on the canvas. Done
+
+2. Now, after the closing the </center> tag, add the below ids:
+
+- Create a span tag and set the text as “Score :” and also give the id
+which will be used to update this span tag with the score for every
+right sketch drawn (functionality for this will be added in the next
+project).          Done
+
+- Similarly, create one more span tag and set the text as “Timer :” and
+also give the id which will be used to update this span tag with the
+time limit for every sketch you will be drawing.           Done
+
+
+
+Now add the below code in style.css file:
+
+1. Add a good background color to the body tag.        Done                 
+
+2. Access the span tag which is holding the score using its id and add the code
+for following:
+
+- Set the font-size as per your choice.            Done
+
+- Set the margin to the left and set the value in pixels in such a way that
+the Score doesn't stick to the extreme left of the screen.         Done
+
+3. Access the span tag which is holding the time using its id, and add the code
+for the following things:
+
+- Set the font-size as per your choice.  Done 
+
+- We want the time to be displayed on the right hand side of the screen,
+hence add a float:right style to it.            Done
+
+- Set the margin to the right and set the value in pixels in such a way
+that the Time doesn't stick to the extreme right of the screen.   Done
+
+4. Access the span tag which is holding the Sketch to be drawn using its id and
+add the suitable text color, so that the sketch name to be drawn highlights
+properly.                 Done
+
+
+
+Now add the below code in the main.js file:
+
+1. Define a variable random_number, and inside it:
+
+- Generate a random number - to set the range from random number use
+the length of the quick_draw_data_set array (Hints are given).    Done
+
+2. Then, using the console.log() function, print the random sketch name, by
+passing the random_number as an index to the quick_draw_data_set array
+on the console screen.   Done
+
+3. Again, get the random sketch name, by passing the random_number as an
+index to the quick_draw_data_set array and store it in the sketch variable.  Done
+
+4. Then, update the text of the span tag which is holding the Sketch to be drawn
+using its id with text 'Sketch To be Drawn:' and concatenated with a sketch
+variable.   Done
+
+5. Then, after this, define the below variables:
+
+- timer_counter- initialize this variable to 0. This variable will keep on
+incrementing the timer counter value.  
+
+- timer_check- add empty string inside it. This will keep checking the
+timer value.
+
+- drawn_sketch- add empty string inside it. This holds the approximate
+guess for the sketch you have drawn on the canvas.
+
+- answer_holder- add an empty string inside it. This variable holds the
+value when the drawn sketch and the sketch to be drawn matches.
+
+- score- initialize this variable to 0. This variable holds the score value for
+every right sketch drawn.
+
+}
